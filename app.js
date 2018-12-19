@@ -1,19 +1,33 @@
 document.addEventListener('DOMContentLoaded', function(){
 	console.log('DOM was loaded!');
-});
+// });
 
-var i = 0;
+
 var plusButton = document.getElementById("plus");
 var minusButton = document.getElementById("minus");
 var inputNumber = document.getElementById("type");
-var topNumber =  document.getElementById("topnumber")
-minusButton.addEventListener("click", minusOne)
-plusButton.addEventListener("click", plusOne)
+var topNumber = 0
+minusButton.addEventListener("click", function(e){
+	e.preventDefault();
+	minus(topNumber, inputNumber)
+})
+plusButton.addEventListener("click", function(e){
+	e.preventDefault();
+	plus(topNumber, inputNumber)
+})
 
-        function plusOne() {
-        document.getElementById("topnumber").value = ++i;
+    function plus(result, input) {
+        topNumber = result + Number(input.value);
+        document.getElementById("topnumber").textContent = topNumber;
+        inputNumber.value = 1;
+
     }
     
-    function minusOne(){
-    	document.getElementById("topnumber").value = --i;
+    function minus(result, input){
+    	topNumber = result - Number(input.value);
+        document.getElementById("topnumber").textContent = topNumber;
+        inputNumber.value = 1;
+
     }
+
+    });

@@ -1,13 +1,16 @@
-/*#topnumber{
+#topnumber{
 	position: center;
 	margin: 0 auto;
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
 }
-*/
 
 
 
 
 
+/*
 input{
 	display: flex;
 	justify-content: center; 
@@ -21,45 +24,21 @@ input{
 	position: relative;
 	
 }
+*/
 
 
-/*button{
-	display: flex;
-	justify-content: center; 
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0 auto;
-}*/
-
-#plus{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	right: 300px;
-	position: absolute;
-	margin-bottom: 50px;
-	margin-right: 50px;
- 
-
-
- /*position: absolute;
-  right: 300px;
-  width: 75px;
-  height: 20px;
-  border: 1px solid black;
-  margin-bottom: 50px;
- float: right;
-    margin-left: -50%;
-    margin-top: 2em;*/
+button {
+    color: white;
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 30px;
 }
 
-#minus{
-	display: flex;
-	justify-content: flex-start;
-	align-items: left;
-	left: 300px;
-	position: absolute;
-	margin-bottom: 50px;
- 
+button:hover {
+    color: grey;
+    background-color: white;
+    border: 3px solid grey;
 }
- 
